@@ -1,0 +1,269 @@
+/* Min reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Variables */
+/* Font */
+/* Colors */
+/* Indent */
+/* Common styles */
+.title {
+  color: #233a5f;
+}
+
+.title::after {
+  content: "";
+  margin-bottom: 20px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #233a5f;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+}
+
+.list {
+  padding-left: 20px;
+  color: #fff;
+  list-style: none;
+}
+
+.line::after {
+  content: "";
+  margin: 0px 10px;
+  display: inline-block;
+  width: 2px;
+  height: 10px;
+  background-color: #233a5f;
+}
+
+/* ---------------------------------------- */
+body {
+  margin: 0px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 992px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #878787;
+  -webkit-box-shadow: -1px -2px 29px 4px rgba(35, 58, 95, 0.75);
+          box-shadow: -1px -2px 29px 4px rgba(35, 58, 95, 0.75);
+}
+
+/* ---------------------------------------- */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Sidebar section */
+.sidebar__container {
+  padding: 40px 15px 30px;
+  max-width: 350px;
+  height: 100%;
+  background-color: #233a5f;
+}
+
+/* Hero section */
+.hero__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.84375;
+  color: #fff;
+}
+.hero__desc {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #c4c2c2;
+}
+.hero__list {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.hero__list :not(:first-child) {
+  margin-top: 10px;
+}
+.hero__item {
+  padding: 4px 34px 4px 8px;
+  color: #233a5f;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.hero__item :hover,
+.hero__item :focus {
+  color: #026bce;
+}
+.hero__link {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* Skills section */
+.skills {
+  margin-bottom: 20px;
+}
+
+/* Hobbies section */
+.hobbies {
+  margin-bottom: 20px;
+}
+
+/* Socials section*/
+.socials__list {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 115px;
+  list-style: none;
+  color: #fff;
+}
+.socials__link :hover,
+.socials__link :focus {
+  color: #fff;
+}
+
+/* socials icons */
+.fa-brands {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  font-size: 28px;
+}
+
+.fa-telegram {
+  color: rgb(0, 102, 255);
+}
+
+.fa-instagram {
+  color: rgb(236, 84, 110);
+}
+
+.fa-github {
+  color: rgb(5, 5, 5);
+}
+
+/* ---------------------------------------- */
+/* Main */
+main {
+  margin: 40px 30px 30px;
+}
+
+/* ---------------------------------------- */
+/* About section */
+.about {
+  margin-bottom: 20px;
+}
+.about__desc {
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+/* ---------------------------------------- */
+/* Projects section */
+.projects {
+  margin-bottom: 30px;
+}
+.projects__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects__list :not(:first-child) {
+  margin-left: 20px;
+}
+.projects__item {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2a2a2a;
+  border: 1px solid transparent;
+}
+.projects__item :hover,
+.projects__item :focus {
+  color: #fff;
+  background-color: #233a5f;
+  border-color: #026bce;
+  border-radius: 4px;
+}
+.projects__link {
+  padding: 5px 10px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* ---------------------------------------- */
+/* Work section */
+.work {
+  margin-bottom: 20px;
+}
+.work__list {
+  list-style: none;
+}
+.work__list :not(:first-child) {
+  margin-top: 20px;
+}
+.work__organization {
+  margin-bottom: 10px;
+  color: #2a2a2a;
+}
+.work__period {
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.task :not(:first-child) {
+  margin-top: 10px;
+}
+
+/* ---------------------------------------- */
+/* Education section */
+.education__list {
+  list-style: none;
+}
+.education__list :not(:first-child) {
+  margin-top: 10px;
+}
+.education__university {
+  color: #2a2a2a;
+}
+.education__position {
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    display: block;
+  }
+  .sidebar__container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .projects__list {
+    display: block;
+  }
+  .projects__list :not(:first-child) {
+    margin-left: 0;
+  }
+}

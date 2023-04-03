@@ -1,0 +1,358 @@
+/* Min reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: currentColor;
+}
+/* Variables */
+/* Font */
+$main-ff: "Poppins", sans-serif;
+$main-fw: 400;
+$secondary-fw: 500;
+$title-fw: 700;
+$main-fz: 16px;
+$secondary-fz: 20px;
+$text-fz: 14px;
+$title-fz: 32px;
+
+/* Colors */
+$main-dark: #2a2a2a;
+$secondary-dark: #c4c2c2;
+$main-light: #fff;
+$accent: #233a5f;
+$text: #878787;
+
+/* Indent */
+$ident_10: 10px;
+$ident_20: 20px;
+$ident_30: 30px;
+$ident_40: 40px;
+$ident_50: 50px;
+
+/* Common styles */
+.title {
+  color: $accent;
+}
+
+.title::after {
+  content: "";
+
+  margin-bottom: $ident_20;
+
+  display: block;
+  width: $ident_50;
+  height: 2px;
+  background-color: $accent;
+}
+
+.subtitle {
+  margin-bottom: $ident_10;
+
+  font-weight: $secondary-fw;
+  font-size: $secondary-fz;
+  line-height: 1;
+  color: $main-light;
+}
+
+.list {
+  padding-left: $ident_20;
+
+  color: $main-light;
+
+  list-style: none;
+}
+
+.line::after {
+  content: "";
+  margin: 0px $ident_10;
+  display: inline-block;
+  width: 2px;
+  height: $ident_10;
+  background-color: $accent;
+}
+/* ---------------------------------------- */
+
+body {
+  margin: 0px auto;
+  margin-top: $ident_50;
+  margin-bottom: $ident_50;
+
+  max-width: 992px;
+
+  font-family: $main-ff;
+  font-weight: $main-fw;
+  font-size: $main-fz;
+  color: $text;
+
+  box-shadow: -1px -2px 29px 4px rgba(35, 58, 95, 0.75);
+}
+/* ---------------------------------------- */
+.wrapper {
+  display: flex;
+}
+/* Sidebar section */
+.sidebar {
+  // .sidebar__container
+
+  &__container {
+    padding: 40px 15px 30px;
+
+    max-width: 350px;
+    height: 100%;
+
+    background-color: $accent;
+  }
+}
+
+/* Hero section */
+.hero {
+  // .hero__title
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: $title-fw;
+    font-size: $title-fz;
+    line-height: calc(27 / 32);
+    color: $main-light;
+  }
+
+  // .hero__desc
+
+  &__desc {
+    margin-bottom: $ident_20;
+
+    font-size: $secondary-fz;
+    color: $secondary-dark;
+  }
+
+  // .hero__list
+
+  &__list {
+    margin-bottom: $ident_20;
+
+    list-style: none;
+
+    :not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  // .hero__item
+
+  &__item {
+    padding: 4px 34px 4px 8px;
+
+    color: $accent;
+    background-color: #e5e5e5;
+
+    border-radius: 4px;
+
+    transition: all 0.8s ease;
+
+    :hover,
+    :focus {
+      color: #026bce;
+    }
+  }
+
+  // .hero__link
+
+  &__link {
+    transition: all 1s ease;
+  }
+}
+
+/* Skills section */
+.skills {
+  margin-bottom: $ident_20;
+}
+
+/* Hobbies section */
+.hobbies {
+  margin-bottom: $ident_20;
+}
+
+/* Socials section*/
+.socials {
+  // .socials__list
+
+  &__list {
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 115px;
+
+    list-style: none;
+
+    color: $main-light;
+  }
+
+  // .socials__link
+
+  &__link {
+    :hover,
+    :focus {
+      color: $main-light;
+    }
+  }
+}
+/* socials icons */
+.fa-brands {
+  transition: all 0.8s ease;
+  font-size: 28px;
+}
+.fa-telegram {
+  color: rgb(0, 102, 255);
+}
+.fa-instagram {
+  color: rgb(236, 84, 110);
+}
+.fa-github {
+  color: rgb(5, 5, 5);
+}
+
+/* ---------------------------------------- */
+/* Main */
+main {
+  margin: $ident_40 $ident_30 $ident_30;
+}
+/* ---------------------------------------- */
+/* About section */
+.about {
+  margin-bottom: $ident_20;
+
+  // .about__desc
+
+  &__desc {
+    line-height: calc(24 / 16);
+    color: $main-dark;
+  }
+}
+
+/* ---------------------------------------- */
+/* Projects section */
+.projects {
+  margin-bottom: $ident_30;
+
+  // .projects__list
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    :not(:first-child) {
+      margin-left: $ident_20;
+    }
+  }
+
+  // .projects__item
+
+  &__item {
+    font-weight: $secondary-fw;
+    font-size: $secondary-fz;
+    color: $main-dark;
+
+    border: 1px solid transparent;
+
+    :hover,
+    :focus {
+      color: $main-light;
+      background-color: #233a5f;
+      border-color: #026bce;
+      border-radius: 4px;
+    }
+  }
+
+  // .projects__link
+
+  &__link {
+    padding: 5px 10px;
+
+    transition: all 1s ease;
+  }
+}
+
+/* ---------------------------------------- */
+/* Work section */
+.work {
+  margin-bottom: $ident_20;
+
+  // .work__list
+
+  &__list {
+    list-style: none;
+    :not(:first-child) {
+      margin-top: $ident_20;
+    }
+  }
+
+  // .work__organization
+
+  &__organization {
+    margin-bottom: $ident_10;
+    color: $main-dark;
+  }
+
+  // .work__period
+
+  &__period {
+    margin-bottom: $ident_20;
+    color: $main-dark;
+  }
+}
+
+.task {
+  // .task__item
+  :not(:first-child) {
+    margin-top: $ident_10;
+  }
+}
+
+/* ---------------------------------------- */
+/* Education section */
+.education {
+  // .education__list
+
+  &__list {
+    list-style: none;
+    :not(:first-child) {
+      margin-top: $ident_10;
+    }
+  }
+
+  // .education__university
+
+  &__university {
+    color: $main-dark;
+  }
+
+  // .education__position
+
+  &__position {
+    font-weight: $secondary-fw;
+    color: $main-dark;
+  }
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    display: block;
+  }
+
+  .sidebar__container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .projects__list {
+    display: block;
+    :not(:first-child) {
+      margin-left: 0;
+    }
+  }
+}
