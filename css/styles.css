@@ -8,10 +8,6 @@
   color: currentColor;
 }
 
-/* Variables */
-/* Font */
-/* Colors */
-/* Indent */
 /* Common styles */
 .title {
   color: #233a5f;
@@ -116,11 +112,10 @@ body {
 }
 
 /* Skills section */
-.skills {
-  margin-bottom: 20px;
-}
-
+/* Languages section */
 /* Hobbies section */
+.skills,
+.lang,
 .hobbies {
   margin-bottom: 20px;
 }
@@ -154,8 +149,8 @@ body {
   color: rgb(0, 102, 255);
 }
 
-.fa-instagram {
-  color: rgb(236, 84, 110);
+.fa-linkedin {
+  color: #0965c1;
 }
 
 .fa-github {

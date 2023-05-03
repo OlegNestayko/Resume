@@ -6,8 +6,8 @@
   text-decoration: none;
   color: currentColor;
 }
-/* Variables */
-/* Font */
+// /* Variables */
+// /* Font */
 $main-ff: "Poppins", sans-serif;
 $main-fw: 400;
 $secondary-fw: 500;
@@ -17,14 +17,14 @@ $secondary-fz: 20px;
 $text-fz: 14px;
 $title-fz: 32px;
 
-/* Colors */
+// /* Colors */
 $main-dark: #2a2a2a;
 $secondary-dark: #c4c2c2;
 $main-light: #fff;
 $accent: #233a5f;
 $text: #878787;
 
-/* Indent */
+// /* Indent */
 $ident_10: 10px;
 $ident_20: 20px;
 $ident_30: 30px;
@@ -166,11 +166,11 @@ body {
 }
 
 /* Skills section */
-.skills {
-  margin-bottom: $ident_20;
-}
-
+/* Languages section */
 /* Hobbies section */
+
+.skills,
+.lang,
 .hobbies {
   margin-bottom: $ident_20;
 }
@@ -208,8 +208,8 @@ body {
 .fa-telegram {
   color: rgb(0, 102, 255);
 }
-.fa-instagram {
-  color: rgb(236, 84, 110);
+.fa-linkedin {
+  color: #0965c1;
 }
 .fa-github {
   color: rgb(5, 5, 5);
