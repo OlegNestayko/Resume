@@ -245,6 +245,9 @@ main {
   font-weight: 500;
   color: #2a2a2a;
 }
+.education__position:hover {
+  color: #233a5f;
+}
 
 @media (max-width: 991px) {
   .wrapper {

@@ -335,6 +335,9 @@ main {
   &__position {
     font-weight: $secondary-fw;
     color: $main-dark;
+    &:hover {
+      color: $accent;
+    }
   }
 }
 
